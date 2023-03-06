@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div id="root">
+    <!-- <ul>
+      <li>이름 : 김은아</li>
+      <li>나이 : 나이도 적어야 돼요?</li>
+      <li>취미 : 게임</li>
+      <li>사는 곳 : 세종</li>
+      <li>좋아하는 음식 : 돈까스</li>
+    </ul> -->
+  </div>
+
+</body>
+
+<script>
+
+  const root = document.getElementById('root');
+
+  function createTag(eleName) {
+
+    let element = document.createElement(eleName);
+    return element;
+
+  }
+
+  let ul = createTag('ul');
+  root.appendChild(ul);
+
+  const member = ["박수연", "강지민", "정희은", "한유진", "김은아"];
+
+  ul.textContent = "강지민과 소녀들";
+
+  for (let i = 0; i < 5; i++) {
+    let li = createTag('li');
+    ul.appendChild(li);
+    li.innerHTML = member[i];
+  }
+
+console.dir(ul)
+
+
+
+
+</script>
+
+</html>
