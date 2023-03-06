@@ -5,10 +5,70 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    body{
+      margin: 0 
+    }
+  </style>
 </head>
 <body>
- <h1> 정희은 </h1>
-나이 : 만 28세 ( 30살 )
 
+  
+  <script>
+
+let div = document.createElement('div');
+document.body.appendChild(div); 
+div.setAttribute('id', 'root');
+
+function rootBox(rootwith, rootHeight, rootpoistion, rootbackgroundcolor) {
+root.style.width = rootwith;
+root.style.height = rootHeight;
+root.style.position = rootpoistion;
+root.style.backgroundColor 
+=rootbackgroundcolor;
+}
+rootBox("100vw", "100vh", "absolute", "darkgray");
+
+for(let i = 0; i<4; i++) {
+let makeDiv =document.createElement('div');
+root.appendChild(makeDiv);
+
+  
+if(i===0) {  
+makeDiv.style.cssText =
+"width:500px; height:200px; font-size: 50px; position:absolute; left:35%; top:50px;color:DimGrey;font-style:italic ;font-family:monospace;"
+makeDiv.innerHTML =
+" ' 강지민과 소녀들 ' "
+} 
+else if(i === 1){
+makeDiv.style.cssText =
+"font-family:cursive; border:1px solid white; width:90%; height:170px;position:absolute; left:50px ;top:160px;border-radius: 90px; text-align:center; font-size:25px ;color:white;font-family:monospace" 
+makeDiv.innerHTML=
+"<br><br>안녕하세요. 정희은입니다  <br>같이 열심히 합시다 화이팅!  ";
+}
+
+else if (i=== 2){   
+makeDiv.style.cssText =
+"width:90%; height:190px; position:absolute; top:360px; font-size:20px; text-align:justify; left:50px; border:2.5px solid gray; border-radius: 90px;text-align:center;color:DimGrey;font-family:monospace;"
+makeDiv.innerHTML=
+"<br><br>만28세 (12월 7일 생일 ㅎㅎ)<br> 취미: 베이킹하는거 좋아하고 빵을 엄청좋아해서 맛있는 빵집 찾아다녀요. 맛집 추천해주세요!!<br> 게임 구경하는것도 좋아합니다 ( 나중에 5인게임해요 )<br>하고싶은 말 : 아직 많이 부족하지만 같이 공부하면서 끝까지 재밌게 했으면 좋겠어요  "
+}
+else { 
+
+makeDiv.style.cssText =
+"font-size:22px; border:1px solid black;top:100px; width:90%; height:150px; border-radius: 90px; margin-top:580px;margin-left:50px;text-align:center;font-family:monospace; "
+makeDiv.innerHTML ="<br><br>앞으로 잘 부탈드려요. <br>우리 말 편하게 해요~~"
+}
+}
+
+
+let div3 = document.getElementsByTagName('div')[4];
+console.dir(div3);
+div3.setAttribute("id", "button");
+
+
+
+  </script>
+  
 </body>
 </html>
